@@ -1,0 +1,24 @@
+{
+  "name": "custom/module-page-builder-promocard",
+  "description": "Page Builder Promo Card module for content type tutorial",
+  "require": {
+    "magento/framework": "*",
+    "magento/module-page-builder": "*",
+    "php": "~7.1.3||~7.2.0"
+  },
+  "type": "magento2-module",
+  "license": [
+    "proprietary"
+  ],
+  "authors": [
+    {
+      "name": "Yashasvi Vashistha",
+      "email": "yashasvi.vashistha@akqa.com"
+    }
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ]
+  }
+}

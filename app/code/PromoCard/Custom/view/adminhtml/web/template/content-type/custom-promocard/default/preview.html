@@ -1,0 +1,22 @@
+<div data-bind="attr: data.main.attributes, style: data.main.style, css: data.main.css">
+    <!-- foreach loop over promo card items -->
+    <div data-bind="foreach: data.items">
+        <div class="promocard-item">
+            <div class="promocard-heading" data-bind="attr: data.heading.attributes, style: data.heading.style, html: data.heading.html"></div>
+
+            <div class="promocard-image" data-bind="attr: data.image.attributes, style: data.image.style">
+                <!-- ko if: data.image.html -->
+                <img data-bind="attr: { src: data.image.html }" />
+                <!-- /ko -->
+            </div>
+
+            <div class="promocard-description" data-bind="attr: data.description.attributes, style: data.description.style, html: data.description.html"></div>
+
+            <div class="promocard-cta" data-bind="attr: data.cta_label.attributes, style: data.cta_label.style">
+                <!-- ko if: data.cta_label.html -->
+                <a data-bind="attr: { href: data.cta_button.html }, html: data.cta_label.html"></a>
+                <!-- /ko -->
+            </div>
+        </div>
+    </div>
+</div>
